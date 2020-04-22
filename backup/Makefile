@@ -12,7 +12,7 @@ install:
 
 uninstall:
 	rm -f /etc/systemd/system/bitwarden_backup.service
-	rm -f /etc/systemd/system/bitwarden_backup.target
+	rm -f /etc/systemd/system/bitwarden_backup.timer
 	rm -f /etc/default/bitwarden_backup
 	rm -f /usr/local/bin/bitwarden_backup.sh
 

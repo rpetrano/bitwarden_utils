@@ -17,7 +17,7 @@ push() {
     line="$1";
     username="${line%@*}"
     domain="${line##*@}"
-    name="${domain%%.*}"
+    name="${domain%.*}"
     password="$(gpg -d "$line")"
     if [ $? -ne 0 ]; then
         log_error GPG "$line"

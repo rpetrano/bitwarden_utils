@@ -1,0 +1,7 @@
+BACKUP_DIR=/mnt/disk/backup/bitwarden
+#DATA_DIR=/var/lib/bitwarden_rs/data
+#USER=bitwarden_rs
+#GROUP=bitwarden_rs
+#FORMAT=%Y-%m-%d-%H-%M-%S.sqlite3
+#UMASK=0277
+#ROTATE=3

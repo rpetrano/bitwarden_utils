@@ -1,0 +1,7 @@
+[Unit]
+Description=Backup Bitwarden data
+
+[Service]
+Type=oneshot
+EnvironmentFile=-/etc/default/bitwarden_backup
+ExecStart=/usr/local/bin/bitwarden_backup.sh

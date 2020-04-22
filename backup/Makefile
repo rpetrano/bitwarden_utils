@@ -1,7 +1,7 @@
 install:
 	install -o root         -g root         -m 644 bitwarden_backup.service /etc/systemd/system/
 	install -o root         -g root         -m 644 bitwarden_backup.timer   /etc/systemd/system/
-	install -o root         -g root         -m 644 default                  /etc/default/bitwarden_backup
+	install -o root         -g root         -m 640 default                  /etc/default/bitwarden_backup
 	install -o bitwarden_rs -g bitwarden_rs -m 750 bitwarden_backup.sh      /usr/local/bin/
 
 	@echo
